@@ -10,7 +10,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./sass/main.css">
   </head>
   <body>
     <div class="card">
@@ -48,7 +48,7 @@
     </div>
     <div class="backdrop modal-is-hidden career-modal">
       <div class="modal">
-        <button class="modal__close career-data-modal-close">
+        <button class="modal__close career-modal-close">
           <svg class="" width="11" height="11">
             <use href="./../images/iconClose.svg"></use>
           </svg>
@@ -56,8 +56,18 @@
         
         </div>
     </div>
+    <div class="backdrop modal-is-hidden education-modal">
+      <div class="modal">
+        <button class="modal__close education-modal-close">
+          <svg class="" width="11" height="11">
+            <use href="./../images/iconClose.svg"></use>
+          </svg>
+        </button>
+      
+        </div>
+    </div>
     <!-- <include src="./modals/careerModal.html"></include> -->
-    <include src=".//modals/educationModal.html"></include>
+    <!-- <include src="./modals/educationModal.html"></include> -->
     <script src="./js/careerModal.js" type="module"></script>
     <script src="./js/educationModal.js" type="module"></script>
   </body>

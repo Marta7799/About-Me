@@ -1,9 +1,9 @@
 ('use strict');
 // (() => {
 //     const refs = {
-//       openModalBtn: document.querySelector('[career-data-modal-open]'),
-//       closeModalBtn: document.querySelector('[career-data-modal-close]'),
-//       modal: document.querySelector('[career-data-modal]'),
+//       openModalBtn: document.querySelector('.career-modal-open'),
+//       closeModalBtn: document.querySelector('.career-modal-close'),
+//       modal: document.querySelector('.career-modal'),
 //     };
 //     refs.openModalBtn.addEventListener('click', toggleModal);
 //     refs.closeModalBtn.addEventListener('click', toggleModal);
