@@ -2,8 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Abou Me</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>About Me</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   </head>
   <body>
     <div class="card">
@@ -18,8 +24,12 @@
       <section class="info">
         <img src="images/hero.png" alt="Ilustracja" class="info-picture" />
         <div class="info-content">
+          <div class="aboutMe">
           <h2>About Me</h2>
-          <h3 class="info-headline">I Am a <span>Web Developer</span></h3>
+          <button class="info-contact-btn cv" type="button" career-data-modal-open>Career</button>
+          <button class="info-contact-btn cv"type="button" education-data-modal-open>Education</button>
+        </div>
+          <!-- <h3 class="info-headline">I Am a <span>Web Developer</span></h3> -->
           <p>
        After 15 years of business experience, I decided to change my career path. I decided to choose the IT industry because I can use my logical and technical thinking skills there. I'm a very organized person. I am determined to carry out the tasks entrusted to me, striving to achieve excellent results. I am conscientious, responsible and ready to constantly learn and improve my skills.
           </p>
@@ -35,5 +45,10 @@
         </div>
       </section>
     </div>
+    <include src="./careerModal.html"></include>
+    <include src="./educationModal.html"></include>
+    <script src="./index.js"type="module"></script>
+    <script src="./careerModal.js" type="module"></script>
+    <script src="./educationModal.js" type="module"></script>
   </body>
 </html>
