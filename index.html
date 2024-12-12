@@ -27,8 +27,8 @@
         <div class="info-content">
           <div class="aboutMe">
           <h2>About Me</h2>
-          <button class="info-contact-btn cv" type="button" career-data-modal-open>Career</button>
-          <button class="info-contact-btn cv"type="button" education-data-modal-open>Education</button>
+          <button class="info-contact-btn cv career-modal-open" type="button" >Career</button>
+          <button class="info-contact-btn cv education-modal-open"type="button" >Education</button>
         </div>
           <!-- <h3 class="info-headline">I Am a <span>Web Developer</span></h3> -->
           <p>
@@ -46,19 +46,19 @@
         </div>
       </section>
     </div>
-    <!-- <div class="backdrop modal-is-hidden" career-data-modal>
+    <div class="backdrop modal-is-hidden career-modal">
       <div class="modal">
-        <button class="modal__close" career-data-modal-close>
+        <button class="modal__close career-data-modal-close">
           <svg class="" width="11" height="11">
             <use href="./../images/iconClose.svg"></use>
           </svg>
         </button>
         
         </div>
-    </div> -->
-    <include src="./modals/careerModal.html"></include>
-    <!-- <include src=".//modals/educationModal.html"></include> -->
-    <script src="./careerModal.js" type="module"></script>
-    <script src="./educationModal.js" type="module"></script>
+    </div>
+    <!-- <include src="./modals/careerModal.html"></include> -->
+    <include src=".//modals/educationModal.html"></include>
+    <script src="./js/careerModal.js" type="module"></script>
+    <script src="./js/educationModal.js" type="module"></script>
   </body>
 </html>

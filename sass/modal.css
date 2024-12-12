@@ -1,8 +1,9 @@
 .modal-is-hidden {
-  pointer-events: none;
+  /* pointer-events: none;
   visibility: none;
   opacity: 0;
-  transform: scale(0);
+  transform: scale(0); */
+  display: none;
 }
 
 .backdrop {
