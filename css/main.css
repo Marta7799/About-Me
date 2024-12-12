@@ -131,7 +131,7 @@ body {
   height: 25px;
 }
 
-.info-is-hidden {
+.modal-is-hidden {
   pointer-events: none;
   visibility: none;
   opacity: 0;
