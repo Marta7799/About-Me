@@ -46,8 +46,18 @@
         </div>
       </section>
     </div>
-    <include src="./careerModal.html"></include>
-    <include src="./educationModal.html"></include>
+    <div class="backdrop modal-is-hidden" career-data-modal>
+      <div class="modal">
+        <button class="modal__close" career-data-modal-close>
+          <svg class="" width="11" height="11">
+            <use href="./../images/iconClose.svg"></use>
+          </svg>
+        </button>
+        
+        </div>
+    </div>
+    <!-- <include src="./modals/careerModal.html"></include> -->
+    <!-- <include src=".//modals/educationModal.html"></include> -->
     <script src="./careerModal.js" type="module"></script>
     <script src="./educationModal.js" type="module"></script>
   </body>
