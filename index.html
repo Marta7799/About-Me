@@ -36,17 +36,23 @@
           <div class="aboutMe">
             <h2>About Me</h2>
             <div class="buttons">
-              <button class="info-contact-btn career-modal-open" type="button">
+              <button
+                class="info-contact-btn career-modal-open"
+                data-modal-open=".career-modal"
+                type="button"
+              >
                 Career
               </button>
               <button
                 class="info-contact-btn education-modal-open"
+                data-modal-open=".education-modal"
                 type="button"
               >
                 Education
               </button>
               <button
                 class="info-contact-btn portfolio-modal-open"
+                data-modal-open=".portfolio-modal"
                 type="button"
               >
                 Portfolio
@@ -88,7 +94,7 @@
     <!-- Education Modal -->
     <div class="backdrop modal-is-hidden education-modal">
       <div class="modal">
-        <button class="modal__close education-modal-close">
+        <button class="modal__close" data-modal-close=".education-modal">
           <img
             src="./images/icons-close.svg"
             alt="Close"
@@ -120,7 +126,7 @@
     <!-- Career Modal -->
     <div class="backdrop modal-is-hidden career-modal">
       <div class="modal">
-        <button class="modal__close career-modal-close">
+        <button class="modal__close" data-modal-close=".career-modal">
           <img
             src="./images/icons-close.svg"
             alt="Close"
@@ -160,7 +166,7 @@
     <!-- Portfolio Modal -->
     <div class="backdrop modal-is-hidden portfolio-modal">
       <div class="modal">
-        <button class="modal__close portfolio-modal-close">
+        <button class="modal__close" data-modal-close=".portfolio-modal">
           <img
             src="./images/icons-close.svg"
             alt="Close"
@@ -221,8 +227,9 @@
       </div>
     </div>
 
-    <script src="js/careerModal.js" type="module"></script>
+    <!-- <script src="js/careerModal.js" type="module"></script>
     <script src="js/educationModal.js" type="module"></script>
-    <script src="js/portfolioModal.js" type="module"></script>
+    <script src="js/portfolioModal.js" type="module"></script> -->
+    <script src="js/modal.js" type="module" defer></script>
   </body>
 </html>
