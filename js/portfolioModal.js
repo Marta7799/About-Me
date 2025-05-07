@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     const refs = {
-      openModalBtn: document.querySelector(".education-modal-open"),
-      closeModalBtn: document.querySelector(".education-modal-close"),
-      modal: document.querySelector(".education-modal"),
+      openModalBtn: document.querySelector(".portfolio-modal-open"),
+      closeModalBtn: document.querySelector(".portfolio-modal-close"),
+      modal: document.querySelector(".portfolio-modal"),
     };
 
     if (refs.openModalBtn && refs.closeModalBtn && refs.modal) {

@@ -1,28 +1,18 @@
-('use strict');
-// (() => {
-//     const refs = {
-//       openModalBtn: document.querySelector('.career-modal-open'),
-//       closeModalBtn: document.querySelector('.career-modal-close'),
-//       modal: document.querySelector('.career-modal'),
-//     };
-//     refs.openModalBtn.addEventListener('click', toggleModal);
-//     refs.closeModalBtn.addEventListener('click', toggleModal);
-//     function toggleModal() {
-//       refs.modal.classList.toggle('modal-is-hidden');
-//     }
-//   })();
+"use strict";
 
-document.addEventListener('DOMContentLoaded', () => {
- 
-  const careerModalOpenButton = document.querySelector('.career-modal-open');
-  const careerModal = document.querySelector('.career-modal');
-  const careerModalCloseButton = document.querySelector('.career-modal-close');
-  
-  careerModalOpenButton.addEventListener('click', () => {
-    careerModal.classList.remove('modal-is-hidden'); 
-  });
-  
-  careerModalCloseButton.addEventListener('click', () => {
-    careerModal.classList.add('modal-is-hidden'); 
-  });
-});
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector(".career-modal-open"),
+    closeModalBtn: document.querySelector(".career-modal-close"),
+    modal: document.querySelector(".career-modal"),
+  };
+
+  if (refs.openModalBtn && refs.closeModalBtn && refs.modal) {
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+  }
+
+  function toggleModal() {
+    refs.modal.classList.toggle("modal-is-hidden");
+  }
+})();

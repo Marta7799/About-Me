@@ -4,21 +4,27 @@
     <meta charset="UTF-8" />
     <title>About Me</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link rel="stylesheet" href="./sass/main.css">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <div class="card">
       <header class="header">
-        <img src="images/photo.jpg" alt="Zdjęcie profilowe" class="header-profile-img" />
+        <img
+          src="images/photo2.JPEG"
+          alt="Zdjęcie profilowe"
+          class="header-profile-img"
+        />
         <div class="header-profile">
-          <h1>Marta Nikiel</h1>
-          <div>WEB DEVELOPER</div>
+          <span>Marta Nikiel</span>
+          <h1>WEB DEVELOPER</h1>
         </div>
       </header>
 
@@ -26,13 +32,27 @@
         <img src="images/hero.png" alt="Ilustracja" class="info-picture" />
         <div class="info-content">
           <div class="aboutMe">
-          <h2>About Me</h2>
-          <button class="info-contact-btn cv career-modal-open" type="button" >Career</button>
-          <button class="info-contact-btn cv education-modal-open"type="button" >Education</button>
-        </div>
-          <!-- <h3 class="info-headline">I Am a <span>Web Developer</span></h3> -->
+            <h2>About Me</h2>
+            <div class="buttons">
+            <button class="info-contact-btn career-modal-open" type="button">
+              Career
+            </button>
+            <button
+              class="info-contact-btn education-modal-open"
+              type="button"
+            >
+              Education
+            </button>
+             <button
+              class="info-contact-btn portfolio-modal-open"
+              type="button"
+              alt="rozwoj"
+            >
+              Portfolio
+            </button>
+          </div>
           <p>
-       After 15 years of business experience, I decided to change my career path. I decided to choose the IT industry because I can use my logical and technical thinking skills there. I'm a very organized person. I am determined to carry out the tasks entrusted to me, striving to achieve excellent results. I am conscientious, responsible and ready to constantly learn and improve my skills.
+          I combine a structured, analytical mindset with a deep passion for continuous learning and growth. I thrive in environments where precision, integrity, and efficiency matter — but where creativity and human connection are equally valued. With a strong sense of responsibility and natural resilience, I approach challenges with clarity and purpose. I’m seeking a role where I can contribute meaningful results while evolving both personally and professionally.
           </p>
           <div class="info-contact">
             <a href="mailto:marta.nikiel@yahoo.com" class="info-contact-btn">
@@ -40,35 +60,114 @@
               Text me!
             </a>
 
-            <a href="https://www.linkedin.com/in/marta-nikiel-331487a7/" class="info-contact-social"><img src="images/iconLinked.svg" alt="Ikona LinkedIn" /></a>
-            <a href="https://github.com/Marta7799" class="info-contact-social"><img src="images/iconGithub.svg" alt="Ikona Github" /></a>
+            <a
+              href="https://www.linkedin.com/in/marta-nikiel-331487a7/"
+              class="info-contact-social"
+              ><img src="images/iconLinked.svg" alt="Ikona LinkedIn"
+            /></a>
+            <a href="https://github.com/Marta7799" class="info-contact-social"
+              ><img src="images/iconGithub.svg" alt="Ikona Github"
+            /></a>
           </div>
         </div>
       </section>
     </div>
-    <div class="backdrop modal-is-hidden career-modal">
-      <div class="modal">
-        <button class="modal__close career-modal-close">
-          <svg width="11" height="11">
-            <use href="./images/icons-close.svg"></use>
-          </svg>
-        </button>
-        
-        </div>
-    </div>
     <div class="backdrop modal-is-hidden education-modal">
       <div class="modal">
         <button class="modal__close education-modal-close">
-          <svg class="iconClose" width="11" height="11">
-            <use href="./../images/icons-close.svg"></use>
-          </svg>
+          <img
+            src="./images/icons-close.svg"
+            alt="Close"
+            width="11"
+            height="11"
+          />
         </button>
-      
-        </div>
+        <h2>Education</h2>
+        <p>
+          <span>04/2023 - 03/2024<br>
+           FullStack Developer<br /></span>
+          IT School GoIT
+        </p><hr>
+        <p>
+          <span>03/2014 - 09/2015<br>
+          Master of Science in Manufacturing Engineering<br /></span>
+          Wyższa Szkoła Zarządzania Ochroną Pracy w Katowicach
+        </p><hr>
+        <p>
+          <span>10/2008 - 09/2013<br>
+          Engineer of Chemistry Technology<br /></span>
+          Politechnika Wrocławska
+        </p>
+      </div>
     </div>
-    <!-- <include src="./modals/careerModal.html"></include> -->
-    <!-- <include src="./modals/educationModal.html"></include> -->
-    <script src="./js/careerModal.js" type="module"></script>
-    <script src="./js/educationModal.js" type="module"></script>
+    <div class="backdrop modal-is-hidden career-modal">
+      <div class="modal">
+        <button class="modal__close career-modal-close">
+          <img
+            src="./images/icons-close.svg"
+            alt="Close"
+            width="11"
+            height="11"
+          />
+        </button>
+        <h2>Career</h2>
+        <p>
+          <span>08/2024 - still<br> Volunteer IT</span><br>
+          Fundacja Hematologiczna<p>&nbsp;</p>
+          -participation in team project<br> -entering datat into the system<br> -
+          working with HTMl, CSS, JS, React Native, Tailwind<br>
+          -Developing and improving products and services
+        </p><hr>
+        <p>
+          <span>05/2009 - still<br>
+          OHS Specialist and Company representative</span><br>
+          PANDA-HURT Sp. komandytowa<p>&nbsp;</p>
+          -Organizing and conducting trainings in the field of health and safety<br>
+          -Preparation and analysis of reports, statistics and summaries<br>
+          -Preparation of reports<br>
+          -Cooperation with other departments of the company<br>
+        -Conducting negotiations with clients<br>
+        -Taking care of the highest quality of customer service
+        </p>
+      
+        <p></p>
+      </div>
+    </div>
+<div class="backdrop modal-is-hidden portfolio-modal">
+      <div class="modal">
+        <button class="modal__close portfolio-modal-close">
+          <img
+            src="./images/icons-close.svg"
+            alt="Close"
+            width="11"
+            height="11"
+          />
+        </button>
+        <h2>Portfolio</h2>
+          <p>
+          <span>FengShui</span><br><a href="https://marta7799.github.io/FengShui/"target="_blank">https://marta7799.github.io/FengShui/</a><br>
+          <a href="https://github.com/Marta7799/FengShui"target="_blank">Link to Github</a><p>&nbsp;</p>
+        </p><hr>
+          <p>
+          <span>Mail Footer</span><br><a href="https://marta7799.github.io/stopka/"target="_blank">https://marta7799.github.io/stopka/</a><br>
+          <a href="https://github.com/Marta7799/stopka"target="_blank">Link to Github</a><p>&nbsp;</p>
+        </p><hr>
+         <p>
+          <span>IceCream</span><br><a href="https://wielembe.github.io/Ice/"target="_blank">https://wielembe.github.io/Ice/</a><br>
+          <a href="https://github.com/wielembe/Ice"target="_blank">Link to Github</a><p>&nbsp;</p>
+        </p><hr>
+             <p>
+          <span>Bookshelf</span><br><a href="https://kglanos.github.io/goit-project-js/"target="_blank">https://kglanos.github.io/goit-project-js/</a><br>
+          <a href="https://github.com/kglanos/goit-project-js"target="_blank">Link to Github</a><p>&nbsp;</p>
+        </p><hr>
+        <p>
+          <span>KapustaWallet</span><br><a href="https://kglanos.github.io/Kapusta-Frontend/login"target="_blank">https://kglanos.github.io/Kapusta-Frontend/login</a><br>
+          <a href="https://github.com/kglanos/Kapusta-Frontend"target="_blank">Link to Github</a><p>&nbsp;</p>
+        </p><hr>
+      </div>
+    </div>
+    <script src="js/careerModal.js" type="module"></script>
+    <script src="js/educationModal.js" type="module"></script>
+    <script src="js/portfolioModal.js" type="module"></script>
   </body>
 </html>
