@@ -1,14 +1,14 @@
 /* === Reset / Base === */
 body {
+  min-height: 100vh;
   margin: 0;
-  height: 100%;
-  color: rgb(52, 58, 64);
-  font-size: 15px;
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(245, 245, 245);
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(245, 245, 245);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: rgb(52, 58, 64);
 }
 
 /* === Card Container === */
